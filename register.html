@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Badminton Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="register">
+  <main class="page-box">
+    <h1>User Registration</h1>
+    <form id="registerForm">
+      <label>Name <input id="registerName" type="text" required></label>
+      <label>Email <input id="registerEmail" type="email" required></label>
+      <label>Password <input id="registerPassword" type="password" minlength="6" required></label>
+      <label>Phone <input id="registerPhone" type="tel" required></label>
+      <button type="submit">Register</button>
+      <p id="registerMessage" class="message"></p>
+    </form>
+    <p>Already have account? <a href="index.html">Login</a></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

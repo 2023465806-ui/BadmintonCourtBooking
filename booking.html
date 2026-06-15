@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Court Booking | Badminton Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="booking">
+  <main class="page-box">
+    <h1>Court Booking</h1>
+    <p>Membership Status: <strong id="memberStatus">None</strong></p>
+    <p>Membership Type: <strong id="memberType">None</strong></p>
+    <form id="bookingForm">
+      <label>Select Court
+        <select id="bookingCourt" required></select>
+      </label>
+      <label>Date <input id="bookingDate" type="date" required></label>
+      <label>Time Slot
+        <select id="bookingSlot" required></select>
+      </label>
+      <button type="submit">Book Now</button>
+      <p id="bookingMessage" class="message"></p>
+    </form>
+    <p>After booking, you will be redirected to Booking History.</p>
+    <p><a href="dashboard.html">Back to dashboard</a></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

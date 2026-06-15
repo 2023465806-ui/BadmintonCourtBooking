@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check Availability | Badminton Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="availability">
+  <main class="page-box">
+    <h1>Check Availability</h1>
+    <form id="availabilityForm">
+      <label>Select Court
+        <select id="availabilityCourt"></select>
+      </label>
+      <label>Date <input id="availabilityDate" type="date" required></label>
+      <button type="submit">Check</button>
+    </form>
+    <h2>Availability Time Slots</h2>
+    <table>
+      <thead>
+        <tr><th>Time Slot</th><th>Status</th></tr>
+      </thead>
+      <tbody id="availabilityRows"></tbody>
+    </table>
+    <p><a href="dashboard.html">Back to dashboard</a></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Membership | Badminton Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="membership">
+  <main class="page-box">
+    <h1>Membership Application</h1>
+    <form id="membershipForm">
+      <label>Membership Type
+        <select id="membershipType" required>
+          <option value="Monthly">Monthly</option>
+          <option value="Quarterly">Quarterly</option>
+          <option value="Yearly">Yearly</option>
+        </select>
+      </label>
+      <label>Start Date <input id="membershipStart" type="date" required></label>
+      <label>Expiry Date <input id="membershipExpiry" type="text" readonly></label>
+      <button type="submit">Apply Membership</button>
+      <p id="membershipMessage" class="message"></p>
+    </form>
+    <p><a href="dashboard.html">Back to dashboard</a></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
